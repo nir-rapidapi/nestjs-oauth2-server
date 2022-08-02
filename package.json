@@ -1,5 +1,5 @@
 {
-  "name": "@nir/nestjs-oauth2-server",
+  "name": "nestjs-oauth2-server-nir",
   "version": "0.0.5",
   "description": "A Nestjs wrapper for oauth2-server",
   "main": "index.js",
