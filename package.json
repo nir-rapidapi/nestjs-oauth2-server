@@ -73,12 +73,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/toondaey/nestjs-oauth2-server.git"
+    "url": "git+https://github.com/nir-rapidapi/nestjs-oauth2-server.git"
   },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/toondaey/nestjs-oauth2-server/issues"
-  },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
