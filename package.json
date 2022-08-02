@@ -14,8 +14,11 @@
     "nestjs",
     "nest"
   ],
+  "files": [
+    "dist"
+  ],
   "directories": {
-    "lib": "lib",
+    "dist": "dist",
     "test": "tests"
   },
   "scripts": {
