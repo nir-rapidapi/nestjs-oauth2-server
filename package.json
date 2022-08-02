@@ -1,5 +1,5 @@
 {
-  "name": "nestjs-oauth2-server-nir2",
+  "name": "@nir-rapidapi/nestjs-oauth2-server",
   "version": "0.0.5",
   "description": "A Nestjs wrapper for oauth2-server",
   "main": "index.js",
@@ -93,6 +93,7 @@
   },
   "homepage": "https://github.com/toondaey/nestjs-oauth2-server#readme",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
   }
 }
