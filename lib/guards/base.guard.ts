@@ -7,7 +7,7 @@ import {
     AuthenticateOptions,
     Request as OAuth2Request,
     Response as OAuth2Response,
-} from 'oauth2-server';
+} from '@nir-rapidapi/oauth-server-pkce';
 import {
     Inject,
     Injectable,
@@ -15,7 +15,7 @@ import {
     ExecutionContext,
 } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
-import OAuth2Server = require('oauth2-server');
+import OAuth2Server = require('@nir-rapidapi/oauth-server-pkce');
 import { Observable, of, throwError } from 'rxjs';
 import { catchError, mergeMap } from 'rxjs/operators';
 

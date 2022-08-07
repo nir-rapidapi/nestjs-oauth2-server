@@ -2,7 +2,7 @@ import {
     Token,
     RefreshToken,
     AuthorizationCode,
-} from 'oauth2-server';
+} from '@nir-rapidapi/oauth-server-pkce';
 
 export interface ITestExpectedResponses {
     accessToken: Token | false;

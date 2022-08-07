@@ -6,7 +6,7 @@ import {
     RefreshTokenModel,
     AuthorizationCodeModel,
     RequestAuthenticationModel,
-} from 'oauth2-server';
+} from '@nir-rapidapi/oauth-server-pkce';
 import moment = require('moment');
 import { Inject, Injectable, Optional } from '@nestjs/common';
 

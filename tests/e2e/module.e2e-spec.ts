@@ -1,4 +1,4 @@
-import OAuth2Server = require('oauth2-server');
+import OAuth2Server = require('@nir-rapidapi/oauth-server-pkce');
 import { Test, TestingModule } from '@nestjs/testing';
 import { InternalServerErrorException } from '@nestjs/common';
 

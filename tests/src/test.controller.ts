@@ -1,5 +1,5 @@
 import { Controller, Post } from '@nestjs/common';
-import { AuthorizationCode, Token } from 'oauth2-server';
+import { AuthorizationCode, Token } from '@nir-rapidapi/oauth-server-pkce';
 
 import {
     OAuth2Token,

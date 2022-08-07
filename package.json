@@ -1,6 +1,6 @@
 {
   "name": "@nir-rapidapi/nestjs-oauth2-server",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A Nestjs wrapper for oauth2-server",
   "main": "index.js",
   "type": "module",
@@ -95,5 +95,8 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "@nir-rapidapi/oauth-server-pkce": "https://github.com/nir-rapidapi/oauth-server-pkce"
   }
 }

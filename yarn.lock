@@ -2334,6 +2334,17 @@
     optional "0.1.4"
     tslib "2.3.1"
 
+"@nir-rapidapi/oauth-server-pkce@https://github.com/nir-rapidapi/oauth-server-pkce":
+  version "1.0.2"
+  resolved "https://github.com/nir-rapidapi/oauth-server-pkce#67fe0427c2fc7d54afef24760b049fa3d62cde0f"
+  dependencies:
+    basic-auth "2.0.1"
+    bluebird "3.7.2"
+    lodash "4.17.21"
+    promisify-any "2.0.1"
+    statuses "1.5.0"
+    type-is "1.6.18"
+
 "@node-redis/bloom@1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@node-redis/bloom/-/bloom-1.0.1.tgz#144474a0b7dc4a4b91badea2cfa9538ce0a1854e"
