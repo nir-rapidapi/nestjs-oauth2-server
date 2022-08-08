@@ -5,7 +5,7 @@ import {
     ExecutionContext,
     createParamDecorator,
 } from '@nestjs/common';
-import { AuthorizeOptions } from '@nir-rapidapi/oauth-server-pkce';
+import { AuthorizeOptions } from 'oauth2-server';
 
 import { OAuth2ServerTokenGuard } from '../guards';
 import { OAUTH2_METHOD_OPTIONS_METADATA } from '../oauth2-server.constants';
@@ -19,6 +19,6 @@ export const OAuth2RenewToken = (
     );
 
 export const OAuth2Token = createParamDecorator(
-    (_: unknown, context: ExecutionContext | any) =>
+    (_: unknown, context: ExecutionContext) =>
         context.switchToHttp().getRequest().oauth?.token,
 );

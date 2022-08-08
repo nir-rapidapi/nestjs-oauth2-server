@@ -7,7 +7,7 @@ import {
     AuthenticateOptions,
     Request as OAuth2Request,
     Response as OAuth2Response,
-} from '@nir-rapidapi/oauth-server-pkce';
+} from 'oauth2-server';
 import {
     Inject,
     Injectable,
@@ -15,7 +15,7 @@ import {
     ExecutionContext,
 } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
-import OAuth2Server = require('@nir-rapidapi/oauth-server-pkce');
+import OAuth2Server = require('oauth2-server');
 import { Observable, of, throwError } from 'rxjs';
 import { catchError, mergeMap } from 'rxjs/operators';
 
@@ -58,19 +58,19 @@ export abstract class BaseGuard {
         );
     }
 
-    protected getRequest<T>(context: ExecutionContext): T {
+    getRequest<T>(context: ExecutionContext): T {
         return context.switchToHttp().getRequest<T>();
     }
 
-    protected getResponse<T>(context: ExecutionContext): T {
+    getResponse<T>(context: ExecutionContext): T {
         return context.switchToHttp().getResponse<T>();
     }
 
-    private getOptions<
+    protected getOptions<
         T extends
             | TokenOptions
             | AuthorizeOptions
-            | AuthenticateOptions,
+            | AuthenticateOptions
     >(context: ExecutionContext): T {
         return this.reflector.get<T, symbol>(
             OAUTH2_METHOD_OPTIONS_METADATA,
@@ -91,7 +91,7 @@ export abstract class BaseGuard {
     ): Observable<Token | AuthorizationCode>;
 
     protected abstract includeOauthInRequest<
-        T extends Record<string, any>,
+        T extends Record<string, any>
     >(
         request: T,
         tokenOrAuthorizationCode: Token | AuthorizationCode,
