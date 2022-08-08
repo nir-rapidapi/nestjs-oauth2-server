@@ -1,6 +1,6 @@
 {
   "name": "@nir-rapidapi/nestjs-oauth2-server",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A Nestjs wrapper for oauth2-server",
   "main": "index.js",
   "type": "module",
@@ -14,13 +14,6 @@
     "nestjs",
     "nest"
   ],
-  "files": [
-    "dist"
-  ],
-  "directories": {
-    "dist": "dist",
-    "test": "tests"
-  },
   "scripts": {
     "commit": "commit",
     "format": "prettier --write lib/**/*.ts tests/**/*.ts",
@@ -93,9 +86,7 @@
   },
   "homepage": "https://github.com/toondaey/nestjs-oauth2-server#readme",
   "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com",
-    "directory": "dist"
+    "registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
     "@nir-rapidapi/oauth-server-pkce": "https://github.com/nir-rapidapi/oauth-server-pkce"
