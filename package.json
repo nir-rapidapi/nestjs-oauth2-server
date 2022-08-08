@@ -73,12 +73,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/boyuai/nestjs-oauth2-server.git"
+    "url": "git+https://github.com/nir-rapidapi/nestjs-oauth2-server.git"
   },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/boyuai/nestjs-oauth2-server/issues"
-  },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
@@ -98,7 +95,6 @@
     "reflect-metadata": "^0.1.12",
     "rxjs": "^6.0.0 || ^7.2.0"
   },
-  "homepage": "https://github.com/boyuai/nestjs-oauth2-server#readme",
   "publishConfig": {
     "access": "public"
   }
