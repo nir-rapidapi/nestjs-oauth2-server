@@ -1,6 +1,6 @@
 {
   "name": "@nir-rapidapi/nestjs-oauth2-server",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "A NestJS wrapper for oauth2-server",
   "main": "index.js",
   "types": "index.d.ts",
@@ -34,7 +34,7 @@
     "release": "dotenv release-it --"
   },
   "dependencies": {
-    "@nir-rapidapi/node-oauth2-server-ts": "https://github.com/nir-rapidapi/node-oauth2-server-ts"
+    "@nir-rapidapi/oauth-server-pkce": "https://github.com/nir-rapidapi/oauth-server-pkce"
   },
   "devDependencies": {
     "@commitlint/cli": "11.0.0",

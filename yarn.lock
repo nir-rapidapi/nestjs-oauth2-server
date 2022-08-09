@@ -2015,9 +2015,9 @@
     optional "0.1.4"
     tslib "2.1.0"
 
-"@nir-rapidapi/node-oauth2-server-ts@https://github.com/nir-rapidapi/node-oauth2-server-ts":
-  version "4.0.0-dev.3"
-  resolved "https://github.com/nir-rapidapi/node-oauth2-server-ts#6d4c98794bc024a8cf93cf9e79f92f93766da9f4"
+"@nir-rapidapi/oauth-server-pkce@https://github.com/nir-rapidapi/oauth-server-pkce":
+  version "1.0.3"
+  resolved "https://github.com/nir-rapidapi/oauth-server-pkce#11adfefedd81dc3aca29971f6f4b43bdadd150c7"
   dependencies:
     basic-auth "2.0.1"
     bluebird "3.7.2"

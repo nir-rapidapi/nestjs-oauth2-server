@@ -5,7 +5,7 @@ import {
     ExecutionContext,
     createParamDecorator,
 } from '@nestjs/common';
-import { AuthorizeOptions } from '@nir-rapidapi/node-oauth2-server-ts';
+import { AuthorizeOptions } from '@nir-rapidapi/oauth-server-pkce';
 
 import { OAuth2ServerAuthorizationGuard } from '../guards';
 import { OAUTH2_METHOD_OPTIONS_METADATA } from '../oauth2-server.constants';

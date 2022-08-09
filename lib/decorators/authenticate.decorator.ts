@@ -3,7 +3,7 @@ import {
     SetMetadata,
     applyDecorators,
 } from '@nestjs/common';
-import { AuthenticateOptions } from '@nir-rapidapi/node-oauth2-server-ts';
+import { AuthenticateOptions } from '@nir-rapidapi/oauth-server-pkce';
 
 import { OAuth2ServerAuthenticationGuard } from '../guards';
 import { OAUTH2_METHOD_OPTIONS_METADATA } from '../oauth2-server.constants';
