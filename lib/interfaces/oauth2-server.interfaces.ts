@@ -1,5 +1,8 @@
 import { Abstract, Type } from '@nestjs/common';
-import { BaseModel, ServerOptions } from 'oauth2-server';
+import {
+    BaseModel,
+    ServerOptions,
+} from '@nir-rapidapi/node-oauth2-server-ts';
 import { ModuleMetadata } from '@nestjs/common/interfaces';
 
 export interface IOAuth2ServerModuleOptions

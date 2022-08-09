@@ -3,7 +3,7 @@ import { Injectable } from '@nestjs/common';
 import {
     IOAuth2ServerModuleOptions,
     IOAuth2ServerOptionsFactory,
-} from '../../lib';
+} from '../../';
 
 @Injectable()
 export class TestConfigService

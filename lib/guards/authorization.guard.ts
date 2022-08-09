@@ -3,7 +3,7 @@ import {
     AuthorizationCode,
     Request as OAuth2Request,
     Response as OAuth2Response,
-} from 'oauth2-server';
+} from '@nir-rapidapi/node-oauth2-server-ts';
 import { from, Observable } from 'rxjs';
 import { Injectable, CanActivate } from '@nestjs/common';
 

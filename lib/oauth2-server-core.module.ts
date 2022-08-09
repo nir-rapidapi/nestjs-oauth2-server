@@ -4,8 +4,8 @@ import {
     DynamicModule,
     NotImplementedException,
 } from '@nestjs/common';
-import OAuth2Server = require('oauth2-server');
-import { ServerOptions } from 'oauth2-server';
+import OAuth2Server = require('@nir-rapidapi/node-oauth2-server-ts');
+import { ServerOptions } from '@nir-rapidapi/node-oauth2-server-ts';
 
 import {
     OAuth2ServerTokenGuard,
